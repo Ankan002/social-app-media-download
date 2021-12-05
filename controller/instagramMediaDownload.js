@@ -1,5 +1,5 @@
 const {validationResult} = require('express-validator')
-const instagramGetUrl = require("instagram-url-direct")
+const instagramGetUrl = require("../helpers/instagramGetUrl")
 
 
 exports.getTheDownloadLink = async (req, res) => {
