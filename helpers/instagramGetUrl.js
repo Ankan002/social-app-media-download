@@ -18,7 +18,7 @@ module.exports = instagramGetUrl = (url_media) => {
                     const mediaData = jsonScript.entry_data.PostPage[0].graphql.shortcode_media
                     console.log("MEDIA DATA", mediaData)
                     if (!mediaData.edge_sidecar_to_children) {
-                        console.log('URL', mediaData.video_url, mediaData)
+                        console.log('URL', mediaData.video_url,mediaData)
                         if (mediaData.is_video) ig.push(mediaData.video_url)
                         else ig.push(mediaData.display_url)
                     } else {
